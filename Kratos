@@ -45,29 +45,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <input type="submit" name="submit">
     </div>
 
-    <script type='text/javascript'>
-    function initEmbeddedMessaging() {
-        try {
-            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-
-            embeddedservice_bootstrap.init(
-                '00Daj00000345qb',
-                'Chat_Kratos',
-                'https://cunning-hawk-67qoh0-dev-ed.trailblaze.my.site.com/ESWChatKratos1710099312074',
-                {
-                    scrt2URL: 'https://cunning-hawk-67qoh0-dev-ed.trailblaze.my.salesforce-scrt.com'
-                }
-            );
-        } catch (err) {
-            console.error('Error loading Embedded Messaging: ', err);
-        }
-    };
-</script>
-<script type='text/javascript' src='https://cunning-hawk-67qoh0-dev-ed.trailblaze.my.site.com/ESWChatKratos1710099312074/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
-
-</div>
-
-
 
 </form>
 
@@ -88,5 +65,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   });
 </script>
+<script type='text/javascript'>
+    function initEmbeddedMessaging() {
+        try {
+            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+            embeddedservice_bootstrap.init(
+                '00Daj00000345qb',
+                'Chat_Kratos',
+                'https://cunning-hawk-67qoh0-dev-ed.trailblaze.my.site.com/ESWChatKratos1710099312074',
+                {
+                    scrt2URL: 'https://cunning-hawk-67qoh0-dev-ed.trailblaze.my.salesforce-scrt.com'
+                }
+            );
+        } catch (err) {
+            console.error('Error loading Embedded Messaging: ', err);
+        }
+    };
+</script>
+<script type='text/javascript' src='https://cunning-hawk-67qoh0-dev-ed.trailblaze.my.site.com/ESWChatKratos1710099312074/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
